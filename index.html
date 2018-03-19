@@ -11,13 +11,29 @@
     <!--  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+   
 
 
 
   <style type="text/css">
+	  
+	  
+	 @font-face{
+  font-family:"AmnestyTradeGothicW04BdCnNo-20";
+  src:url("fonts/AmnestyTradeGothicW04BdCnNo-20.eot?#iefix");
+  src:url("fonts/AmnestyTradeGothicW04BdCnNo-20.eot?#iefix") format("eot"),url("fonts/AmnestyTradeGothicW04BdCnNo-20.woff") format("woff"),url("fonts/AmnestyTradeGothicW04BdCnNo-20.ttf") format("truetype"),url("fonts/AmnestyTradeGothicW04BdCnNo-20.svg#AmnestyTradeGothicW04BdCnNo-20") format("svg");
+}
+	  
+	  
+	  
+	  
     html, body {
       margin: 0;
       padding: 0;
+		font-family: fonts;
+		
     }
 	  
 	 
@@ -168,7 +184,30 @@
 
 .pagination__link {
     line-height: 1em;
+	text-align: center;
+
+	
 }
+	  
+	  .slick-current {
+		  background:black;
+		  
+	  }
+	  
+	  
+	  .slick-current .pagination__link {
+		  color:white;  
+	  }
+	  
+	  .pagination__link:hover {
+	background: #aaa;
+	  }
+        
+	 .slick-current .pagination__link:hover {
+    background: black;
+}
+	  
+
 	  
   </style>
   
@@ -285,11 +324,10 @@
 							
 		
     
-    
-    
-  
+
+
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-  <script src="slick_fullfiles/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).on('ready', function() {
     
